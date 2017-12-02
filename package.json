@@ -1,0 +1,36 @@
+{
+  "name": "node-orangedata",
+  "version": "0.0.0",
+  "description": "Node.js integration for OrangeData service",
+  "license": "MIT",
+  "main": "lib",
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:orangedata-official/node-orangedata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orangedata-official/node-orangedata/issues"
+  },
+  "author": {
+    "name": "Sergey Kunin",
+    "email": "sk@stapps.ru",
+    "url": "https://github.com/orangedata-official"
+  },
+  "scripts": {
+    "test": "node examples/index",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "validator": "^9.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

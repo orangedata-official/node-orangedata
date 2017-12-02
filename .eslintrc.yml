@@ -1,0 +1,16 @@
+parserOptions:
+  ecmaVersion: 8
+  sourceType: module
+  ecmaFeatures: { experimentalObjectRestSpread: true }
+env: { node: true }
+
+extends:
+  - airbnb-base
+plugins:
+  - import
+rules:
+  import/order: [error, { groups: [builtin, external, internal, parent, sibling, index], newlines-between: always }]
+  no-console: error
+  max-len: [error, { code: 110, ignoreComments: true }]
+  function-paren-newline: [error, consistent]
+  object-curly-newline: [error, { ObjectExpression: { multiline: true, consistent: true }, ObjectPattern: { multiline: true, consistent: true } }]

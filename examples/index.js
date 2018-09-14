@@ -34,6 +34,8 @@ order
     paymentMethodType: 1,
     paymentSubjectType: 1,
     nomenclatureCode: 'igQVAAADMTIzNDU2Nzg5MDEyMwAAAQ==',
+    supplierINN: '3123011520',
+    supplierInfo: { phoneNumbers: ['+79998887766'], name: 'Наименование поставщика' },
   })
   .addPayment({ type: 1, amount: 10 })
   .addPayment({ type: 2, amount: 40 })

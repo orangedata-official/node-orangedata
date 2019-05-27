@@ -62,6 +62,8 @@
       group: 'Main',
       type: 1, // Приход
       customerContact: '+79991234567',
+      customer: 'покупатель',
+      customerINN: '7725713770',
       taxationSystem: 1, // Общая
     });
 

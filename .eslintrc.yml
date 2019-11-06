@@ -1,5 +1,5 @@
 parserOptions:
-  ecmaVersion: 8
+  ecmaVersion: 2018
   sourceType: module
   ecmaFeatures: { experimentalObjectRestSpread: true }
 env: { node: true }
@@ -11,6 +11,6 @@ plugins:
 rules:
   import/order: [error, { groups: [builtin, external, internal, parent, sibling, index], newlines-between: always }]
   no-console: error
-  max-len: [error, { code: 110, ignoreComments: true }]
+  max-len: [error, { code: 115, ignoreComments: true }]
   function-paren-newline: [error, consistent]
   object-curly-newline: [error, { ObjectExpression: { multiline: true, consistent: true }, ObjectPattern: { multiline: true, consistent: true } }]

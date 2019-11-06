@@ -21,16 +21,31 @@
   },
   "scripts": {
     "test": "node examples/index",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --ignore-path .gitignore --color"
   },
   "dependencies": {
-    "request": "^2.83.0",
-    "request-promise-native": "^1.0.5",
-    "validator": "^9.1.2"
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "validator": "^12.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.12.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2"
   }
 }

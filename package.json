@@ -19,6 +19,11 @@
     "email": "sk@stapps.ru",
     "url": "https://github.com/orangedata-official"
   },
+  "files": [
+    "config",
+    "examples",
+    "lib"
+  ],
   "scripts": {
     "test": "node examples/index",
     "postversion": "git push && git push --tags",

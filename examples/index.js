@@ -35,7 +35,7 @@ order
     tax: 1,
     paymentMethodType: 1,
     paymentSubjectType: 1,
-    nomenclatureCode: 'igQVAAADMTIzNDU2Nzg5MDEyMwAAAQ==',
+    nomenclatureCode: 'RE0EMWGSYQ1yaHVzbyFOQklkWWZ0',
     supplierINN: '3123011520',
     supplierInfo: { phoneNumbers: ['+79998887766'], name: 'Наименование поставщика' },
   })

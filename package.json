@@ -1,6 +1,6 @@
 {
   "name": "node-orangedata",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Node.js integration for OrangeData service",
   "license": "MIT",
   "main": "lib",
